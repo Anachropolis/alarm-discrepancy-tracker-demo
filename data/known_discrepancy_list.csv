@@ -1,0 +1,7 @@
+asset_id,known_condition,description,owner,date_logged,review_by
+BR-104,Communication Alarm,Known intermittent communication alarm during planned network maintenance window.,Controls Team,2026-01-12,2026-01-20
+GEN-007,Maintenance Outage,Generator intentionally unavailable due to scheduled preventive maintenance.,Generation Ops,2026-01-10,2026-01-18
+CAP-332,Control Mode Mismatch,Capacitor bank placed in manual control for voltage support study.,Planning Engineering,2026-01-13,2026-01-19
+TX-144,Oil Temperature Alarm,Temperature sensor drift identified; replacement work order has been issued.,Substation Maintenance,2026-01-11,2026-01-16
+MTR-615,Data Quality Alarm,Meter data validation issue opened with metering support team.,Metering Team,2026-01-09,2026-01-14
+SW-602,Position Indication Mismatch,Historical discrepancy retained for stale-record testing; current status is normal.,Field Operations,2026-01-05,2026-01-12

@@ -1,0 +1,14 @@
+asset_id,asset_name,criticality,system_group
+TX-221,Transformer 221,High,North Region
+BR-104,Breaker 104,High,East Region
+GEN-007,Generator 007,Medium,Backup Systems
+CAP-332,Capacitor Bank 332,Medium,Voltage Support
+RTU-019,Remote Terminal Unit 019,High,Telemetry
+SW-558,Switch 558,Medium,North Region
+TX-144,Transformer 144,High,West Region
+BR-219,Breaker 219,High,South Region
+LN-771,Line 771,High,North Region
+GEN-042,Generator 042,Medium,Generation
+RTU-027,Remote Terminal Unit 027,Medium,Telemetry
+MTR-615,Meter 615,Low,Metering
+SW-602,Switch 602,Low,Distribution Interface

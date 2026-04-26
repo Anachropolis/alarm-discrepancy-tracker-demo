@@ -1,0 +1,16 @@
+asset_id,asset_name,current_status,reported_condition,last_updated
+TX-221,Transformer 221,Available,Normal,2026-01-15 08:00
+BR-104,Breaker 104,Available,Communication Alarm,2026-01-15 08:05
+GEN-007,Generator 007,Unavailable,Maintenance Outage,2026-01-15 08:10
+CAP-332,Capacitor Bank 332,Available,Control Mode Mismatch,2026-01-15 08:13
+RTU-019,Remote Terminal Unit 019,Available,Telemetry Failure,2026-01-15 08:17
+SW-558,Switch 558,Available,Position Indication Mismatch,2026-01-15 08:21
+TX-144,Transformer 144,Available,Oil Temperature Alarm,2026-01-15 08:25
+BR-219,Breaker 219,Unavailable,Forced Outage,2026-01-15 08:28
+LN-771,Line 771,Available,Normal,2026-01-15 08:31
+GEN-042,Generator 042,Available,Voltage Regulator Alarm,2026-01-15 08:36
+RTU-027,Remote Terminal Unit 027,Available,Normal,2026-01-15 08:41
+MTR-615,Meter 615,Available,Data Quality Alarm,2026-01-15 08:44
+SW-602,Switch 602,Available,Normal,2026-01-15 08:49
+TX-309,Transformer 309,Available,Cooling Fan Alarm,2026-01-15 08:53
+BR-333,Breaker 333,Available,Low SF6 Pressure Alarm,2026-01-15 08:57
