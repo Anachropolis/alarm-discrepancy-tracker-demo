@@ -1,14 +1,8 @@
 import pandas as pd
 from typing import Protocol
 from dataclasses import dataclass
-from datetime import datetime, timedelta
-
-"""Asset Conversion"""
-critical_asset_df = pd.read_csv("data/critical_asset_list.csv")
-current_sys_status = pd.read_csv("data/current_system_status_report.csv")
-known_discrepancy_df = pd.read_csv("data/known_discrepancy_list.csv")
-
-CURRENT_TIME = datetime.now().strftime('%Y-%m-%d')
+from datetime import datetime
+from pathlib import Path
 
 @dataclass
 class DataSource:
@@ -17,6 +11,8 @@ class DataSource:
     current_system_status: pd.DataFrame
     known_discrepancies: pd.DataFrame
 
+
+CURRENT_TIME = datetime.now().strftime('%Y-%m-%d')
 
 #Definite shape of Tool classes
 class Tool(Protocol):
@@ -32,6 +28,8 @@ class AlarmComparisonTool:
         excluded = merged[~(merged["_merge"] == "both")]
         excluded.drop("_merge", axis=1, inplace=True)
         excluded.dropna(axis='columns', how='all', inplace=True)
+        excluded['asset_id'] = excluded['asset_id'].str.strip()
+        data.critical_asset['asset_id'] = data.critical_asset['asset_id'].str.strip()
         data.current_sys_status = excluded
 
 
@@ -41,6 +39,8 @@ class OutstandingAlarmsTool:
         current_sys_status = data.current_system_status
         in_alarm_state = current_sys_status[(current_sys_status["reported_condition"] != "Normal") &
                                         (current_sys_status["current_status"] == "Available")]
+        in_alarm_state = in_alarm_state.merge(data.critical_asset[['asset_id', 'criticality']], on='asset_id', how='left')
+        in_alarm_state["criticality"] = in_alarm_state["criticality"].fillna("none assigned")
         return in_alarm_state
 
 
@@ -80,27 +80,20 @@ class ReportRefiner:
     def __init__(self, data: DataSource):
         self.data = data
 
-    def generate_report(self) -> None:
+    def generate_report(self, path: Path) -> None:
         AlarmComparisonTool().run(self.data)
         refined_alarms = OutstandingAlarmsTool().run(self.data)
-        refined_alarms.to_csv("data/comparison.csv", index=False)
+        refined_alarms.to_csv(path, index=False)
 
-    def generate_highlighted_discrepancies(self) -> None:
-        highlighted_report = data.known_discrepancies.style.apply(Highlighter().run, axis=1)
+    def generate_highlighted_discrepancies(self, path: Path) -> None:
+        highlighted_report = self.data.known_discrepancies.style.apply(Highlighter().run, axis=1)
         highlighted_report.to_excel(
-            "data/highlighted_discrepancies.xlsx", index=False)
+            path, index=False)
 
 
 
 
 
-data = DataSource(critical_asset=critical_asset_df,
-                  current_system_status=current_sys_status,
-                  known_discrepancies=known_discrepancy_df,
-                  )
 
-
-refine = ReportRefiner(data)
-refine.generate_highlighted_discrepancies()
 
 
