@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e0c304c-d5d2-4955-90e0-12510fc4feaf" name="Changes" comment="">
+    <list default="true" id="4e0c304c-d5d2-4955-90e0-12510fc4feaf" name="Changes" comment="Add highlighted discrepancy report generator">
+      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/refine_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/refine_tools.py" afterDir="false" />
     </list>
@@ -46,9 +47,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.app.executor": "Run",
     "Python.ingest.executor": "Run",
-    "Python.refine_tools.executor": "Run",
+    "Python.refine_tools.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/adamh/PycharmProjects/alarm-discrepancy-tracker-demo"
@@ -77,6 +80,15 @@
       <option name="presentableId" value="Default" />
       <updated>1777241142921</updated>
     </task>
+    <task id="LOCAL-00001" summary="Add highlighted discrepancy report generator">
+      <option name="closed" value="true" />
+      <created>1777298206342</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1777298206342</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,5 +101,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add highlighted discrepancy report generator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add highlighted discrepancy report generator" />
   </component>
 </project>
