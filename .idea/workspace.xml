@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e0c304c-d5d2-4955-90e0-12510fc4feaf" name="Changes" comment="Add highlighted discrepancy report generator">
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+    <list default="true" id="4e0c304c-d5d2-4955-90e0-12510fc4feaf" name="Changes" comment="Add app.py and CLI for running report">
+      <change afterPath="$PROJECT_DIR$/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/refine_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/refine_tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +89,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777298206342</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add app.py and CLI for running report">
+      <option name="closed" value="true" />
+      <created>1777328136698</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1777328136698</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add app.py and CLI for running report">
+      <option name="closed" value="true" />
+      <created>1777328211320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1777328211320</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +121,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add highlighted discrepancy report generator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add highlighted discrepancy report generator" />
+    <MESSAGE value="Add:&#10;-app.py and CLI for running report&#10;-criticality equipment in final report" />
+    <MESSAGE value="Add app.py and CLI for running report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add app.py and CLI for running report" />
   </component>
 </project>
