@@ -175,3 +175,60 @@ python src/app.py \
   --generate-highlighted \
   --highlight data/sample_output/stale_known_discrepancies.xlsx
 ```
+---
+## Example Terminal Output
+```text
+Starting operations discrepancy review...
+Current system status file: data/sample_input/current_system_status_report.csv
+Known discrepancy file: data/sample_input/known_discrepancy_list.csv
+Critical asset file: data/sample_input/critical_asset_list.csv
+
+Operations discrepancy review complete.
+Current status records processed: 25
+Known discrepancies loaded: 8
+Critical assets loaded: 12
+Outstanding alarms requiring review: 4
+
+Output file: data/sample_output/discrepancy_report.csv
+```
+
+## Screenshots
+Input Data Preview
+
+Terminal Output
+
+Output Report Preview
+
+## Business Use Cases
+
+This automation pattern can be adapted for:
+
+- Operations discrepancy tracking
+- Alarm report cleanup
+- Maintenance exception reporting
+- Compliance review support
+- Inventory issue tracking
+- Ticket or incident triage
+- Recurring spreadsheet comparison
+- Dashboard export cleanup
+- What This Project Demonstrates
+
+## This project demonstrates my ability to:
+
+- Translate an operational workflow into automation logic.
+- Work with multiple data sources.
+- Use pandas for data comparison and filtering.
+- Build repeatable command-line tools.
+- Validate inputs before processing.
+- Generate clean business-facing reports.
+- Document a project for handoff and reuse.
+- Future Improvements
+
+## Potential improvements include:
+
+- Add automated tests for core comparison logic.
+- Add configurable stale-date thresholds.
+- Add support for Excel input files.
+- Add email delivery for generated reports.
+- Add scheduled execution.
+- Add a lightweight dashboard or FastAPI endpoint.

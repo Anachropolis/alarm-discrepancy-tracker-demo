@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e0c304c-d5d2-4955-90e0-12510fc4feaf" name="Changes" comment="&quot;Refactor report generation workflow with validation and optional stale discrepancy export&quot;&#10;&#10;Refactor: run methods for tools">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="4e0c304c-d5d2-4955-90e0-12510fc4feaf" name="Changes" comment="add screenshots of sample inputs and outputs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refine_tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/refine_tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +112,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777368329753</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="git commit -m &quot;Restructure project and add core repo documentation&quot;">
+      <option name="closed" value="true" />
+      <created>1777890741549</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777890741549</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add screenshots of sample inputs and outputs">
+      <option name="closed" value="true" />
+      <created>1777974070629</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1777974070629</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -136,6 +147,8 @@
     <MESSAGE value="Add:&#10;-app.py and CLI for running report&#10;-criticality equipment in final report" />
     <MESSAGE value="Add app.py and CLI for running report" />
     <MESSAGE value="&quot;Refactor report generation workflow with validation and optional stale discrepancy export&quot;&#10;&#10;Refactor: run methods for tools" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Refactor report generation workflow with validation and optional stale discrepancy export&quot;&#10;&#10;Refactor: run methods for tools" />
+    <MESSAGE value="git commit -m &quot;Restructure project and add core repo documentation&quot;" />
+    <MESSAGE value="add screenshots of sample inputs and outputs" />
+    <option name="LAST_COMMIT_MESSAGE" value="add screenshots of sample inputs and outputs" />
   </component>
 </project>
