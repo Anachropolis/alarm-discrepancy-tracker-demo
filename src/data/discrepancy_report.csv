@@ -1,0 +1,6 @@
+asset_id,asset_name,current_status,reported_condition,last_updated,criticality
+RTU-019,Remote Terminal Unit 019,Available,Telemetry Failure,2026-01-15 08:17,High
+SW-558,Switch 558,Available,Position Indication Mismatch,2026-01-15 08:21,Medium
+GEN-042,Generator 042,Available,Voltage Regulator Alarm,2026-01-15 08:36,Medium
+TX-309,Transformer 309,Available,Cooling Fan Alarm,2026-01-15 08:53,none assigned
+BR-333,Breaker 333,Available,Low SF6 Pressure Alarm,2026-01-15 08:57,none assigned
